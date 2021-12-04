@@ -1,0 +1,36 @@
+body {
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+}
+
+nav {
+    height: 5rem;
+    background-color: #89B5AF;
+    text-decoration: none;
+    text-align: center;
+    font-size: 2rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #D0CAB2;
+}
+
+h1 {
+    color: #96C7C1;
+}
+
+.blog-page {
+    text-align: center;
+    margin: 1rem;
+    box-sizing: border-box;
+    border: 1px solid #DED9C4;
+}
+
+.blog-page ul {
+    list-style: none;
+}

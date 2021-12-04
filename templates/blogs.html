@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block title %}The Conversation{% endblock title %}
+
+{% block content %}
+    {% for post in post_list %}
+    <div class="blog-page">
+        <h1>{{ post.title }}</h1>
+        <ul>
+            <li>
+                {{ post.body }}
+            </li>
+            <li>
+                <small>by: {{ post.author }}</small>
+            </li>
+        </ul>
+        <a href="{% url 'blog_detail' post.id %}">View Details</a>
+        <a href="{% url 'blog_edit' post.id %}">Edit</a>
+        <a href="{% url 'blog_delete' post.id %}">Delete</a>
+    </div>
+    {% endfor %}
+{% endblock content %}
